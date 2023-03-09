@@ -13,13 +13,13 @@
             <h1>Pokedex</h1>
             <ul class="pokemon-list">
                 <% pokemonsInfo.forEach((current)=>{%>
-                    <li class="card">
+                    <li id="<%= current.id %>" class="card <%= current.types[0] %>">
                         <div class="circle">
                             <img src="<%= current.sprites%>" alt="">
                         </div>
                         <div class="name-type">
-                            <h2><%= current.id %>. <%= current.name %></h2>
-                            <p></p>
+                            <h2><span class="id"><%= current.id %></span>. <span><%= current.name %></span></h2>
+                            <p><%= current.types.join(" | ") %></p>
                         </div>
                     </li>
                 <% }) %>
