@@ -149,6 +149,7 @@ div.name-type > h2 > span {
 section.modal {
     width: 90%;
     /* height: 80vh; */
+    max-height: 95vh;
     padding-bottom: 20px;
     background-color: white;
     position: fixed;
@@ -232,6 +233,7 @@ section.modal > img.official-artwork {
 
     section.modal > img.official-artwork {
         width: 40%;
-        margin: 100px auto;
+        /* margin: 100px auto; */
+        margin: 25px auto;
     }
 }
