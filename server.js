@@ -3,7 +3,7 @@ const path = require('path');
 const fetchPokemon = require('./PokemonService');
 const app = express();
 
-const apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
+const apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=251";
 
 app.set('view engine', 'ejs'); //Configurando o EJS como a view engine do servidor express
 

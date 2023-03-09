@@ -141,6 +141,10 @@ div.name-type > h2 > span {
     background-color: rgba(4, 119, 4, 0.24);
 }
 
+.dark {
+    background-color: rgba(24, 26, 24, 0.24);
+}
+
 /*Modal*/
 section.modal {
     width: 90%;
