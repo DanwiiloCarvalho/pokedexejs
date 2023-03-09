@@ -12,19 +12,18 @@
         <main class="container">
             <h1>Pokedex</h1>
             <ul class="pokemon-list">
-                <!-- <li class="card">
-                    <div class="circle">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
-                    </div>
-                    <div class="name-type">
-                        <h2>25. Bulbasaur</h2>
-                        <p>grass | poison</p>
-                    </div>
-                </li> -->
+                <% pokemonsInfo.forEach((current)=>{%>
+                    <li class="card">
+                        <div class="circle">
+                            <img src="<%= current.sprites%>" alt="">
+                        </div>
+                        <div class="name-type">
+                            <h2><%= current.id %>. <%= current.name %></h2>
+                            <p></p>
+                        </div>
+                    </li>
+                <% }) %>
             </ul>
-            <!-- <section class="modal">
-
-            </section> -->
         </main>
     </body>
 </html>
